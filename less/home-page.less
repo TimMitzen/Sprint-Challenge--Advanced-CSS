@@ -6,6 +6,8 @@
 
     h2 {
       padding: 15px;
+      align-self: flex-start;
+      
     }
 
     p {
@@ -58,8 +60,41 @@
       }
 
       .btn {
+        .custom-btn-shape(5px);
+        position: relative;
+        background-color: @btn-bg-color;
+        width: 95px;
+        height: 30px;
+        text-align: center;
+        color: white;
+        padding: 5px;
+        .btn-font(1.5rem);
+        transition-duration: 0.4s;
+        overflow: hidden;
+        cursor: pointer;
       }
-    }
+        .btn:after{ 
+          content:"";
+          display: block;
+          padding-top: 300%;
+          padding-left: 350%;
+          background-color: pink;
+          
+          margin-top: -120%;
+          opacity: 0;
+          transition: all 0.8s;
+          margin-left: -20%;
+        }
+          .btn:active:after{
+            padding:0;
+            margin:0;
+            opacity: 1;
+            transition: 0s;
+          }
+
+        }
+      }
+    
 
     .walk-img {
       width: 46%;
@@ -71,5 +106,5 @@
         border-radius: 10px;
       }
     }
-  }
+  
 }// home
