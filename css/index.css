@@ -169,6 +169,12 @@ header {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  header {
+    background-color: lightgrey;
+    width: 400px;
+  }
+}
 header h1 {
   font-size: 2.9rem;
 }
@@ -191,6 +197,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .home {
+    width: 400px;
+  }
+}
 .home .intro h2 {
   padding: 15px;
   align-self: flex-start;
@@ -198,10 +209,20 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .home .main-header {
+    width: 400px;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .home .space-images {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -234,6 +255,11 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .home .walk .walk-text {
+    width: 400px;
+  }
+}
 .home .walk .walk-text .btn {
   border-radius: 5px;
   position: relative;
@@ -247,6 +273,11 @@ footer {
   transition-duration: 0.4s;
   overflow: hidden;
   cursor: pointer;
+}
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .home .walk .walk-text .btn {
+    width: 400px;
+  }
 }
 .home .walk .walk-text .btn:after {
   content: "";
