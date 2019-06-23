@@ -206,11 +206,21 @@ footer {
   padding: 15px;
   align-self: flex-start;
 }
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .home .intro h2 {
+    padding: 10px 0;
+  }
+}
 .home .intro p {
   padding: 0 15px;
 }
 @media only screen and (min-width: 500px) and (max-width: 799px) {
-  .home .main-header {
+  .home .intro p {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .home img {
     width: 400px;
   }
 }
@@ -219,19 +229,32 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
-@media only screen and (min-width: 500px) and (max-width: 799px) {
-  .home .space-images {
-    display: none;
-  }
-}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .home .space-images #launch {
+    display: none;
+  }
+  .home .space-images #sky {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
+}
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .home .visit-planets {
+    padding: 0;
+  }
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -245,6 +268,13 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .home .walk {
+    padding: 20px 10px;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
@@ -277,6 +307,7 @@ footer {
 @media only screen and (min-width: 500px) and (max-width: 799px) {
   .home .walk .walk-text .btn {
     width: 400px;
+    height: 50px;
   }
 }
 .home .walk .walk-text .btn:after {
@@ -304,4 +335,9 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .home .walk-img img {
+    width: 200%;
+  }
 }
