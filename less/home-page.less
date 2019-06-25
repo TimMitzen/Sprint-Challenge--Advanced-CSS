@@ -1,35 +1,66 @@
-// Home Content
-
 .home {
+  @media @mobile{
+    width:400px;
+  }
 
   .intro {
-
+    
     h2 {
       padding: 15px;
+      align-self: flex-start;
+      @media @mobile{
+      padding: 10px 0;
+      }
     }
 
     p {
       padding:0 15px;
+      @media @mobile{
+        padding:0;
+      }
     }
-  
+ 
   }
-
+  img {
+    @media @mobile {
+      width: 400px;
+      
+      
+    }
+  }
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    
+   
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @mobile{
+      width: 100%;
+      
+      }
+    }
+    @media @mobile{
+      #launch {
+        display:none;
+    }
+      #sky {
+        display:none;
+      
+      }
+     
     }
   }
 
   .visit-planets {
     padding: 15px;
-
+    @media @mobile{
+      padding:0;
+    }
     h3 {
       margin-top: 11px;
     }
@@ -45,6 +76,13 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @mobile{
+      
+      padding: 20px 10px;
+      justify-content: flex-end;
+      flex-direction: column-reverse;
+    }
+    
 
     .walk-text {
       width: 50%;
@@ -56,20 +94,67 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
+      @media @mobile{
+        width: 400px;
+        
       }
-    }
+      .btn {
+        .custom-btn-shape(5px);
+        position: relative;
+        background-color: @btn-bg-color;
+        width: 95px;
+        height: 30px;
+        text-align: center;
+        color: white;
+        padding: 5px;
+        .btn-font(1.5rem);
+        transition-duration: 0.4s;
+        overflow: hidden;
+        cursor: pointer;
+        @media @mobile{
+          width: 400px;
+          height: 50px;
+        }
+      }
+        .btn:after{ 
+          content:"";
+          display: block;
+          padding-top: 300%;
+          padding-left: 350%;
+          background-color: pink;
+          
+          margin-top: -120%;
+          opacity: 0;
+          transition: all 0.8s;
+          margin-left: -20%;
+        }
+          .btn:active:after{
+            padding:0;
+            margin:0;
+            opacity: 1;
+            transition: 0s;
+          }
+
+        }
+      }
+    
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
       
+      
+    
+    
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @mobile{
+          width: 200%;
+        }
       }
+     
     }
-  }
+  
 }// home
