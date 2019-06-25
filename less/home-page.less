@@ -77,10 +77,12 @@
     display: flex;
     justify-content: center;
     @media @mobile{
-      
-      padding: 20px 10px;
+     
+      padding: 30px 0px;
       justify-content: flex-end;
       flex-direction: column-reverse;
+      
+     
     }
     
 
@@ -88,6 +90,7 @@
       width: 50%;
 
       h3 {
+        margin-top: 30px;
         margin-bottom: 10px;
       }
 
@@ -106,27 +109,29 @@
         height: 30px;
         text-align: center;
         color: white;
-        padding: 5px;
+        padding: 7px;
         .btn-font(1.5rem);
         transition-duration: 0.4s;
         overflow: hidden;
         cursor: pointer;
         @media @mobile{
           width: 400px;
-          height: 50px;
+          height: 35px;
+          .btn-font(1.7rem)
         }
       }
         .btn:after{ 
           content:"";
           display: block;
           padding-top: 300%;
-          padding-left: 350%;
+          padding-left: 360%;
           background-color: pink;
           
           margin-top: -120%;
           opacity: 0;
           transition: all 0.8s;
-          margin-left: -20%;
+          margin-left: -40%;
+          margin-right: -40%;
         }
           .btn:active:after{
             padding:0;
